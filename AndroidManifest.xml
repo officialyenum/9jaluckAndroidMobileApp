@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lordwingames.a9jaluck">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".LoginActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".ErrorActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".GameActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".bluckyTicketActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".scratchTicketActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/title_activity_account"
+            android:launchMode="singleTask"/>
+        <activity android:name=".promoActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ScratchActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".VirtualActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".BluckyActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".Splash2Activity"
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBar"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
